@@ -1,4 +1,4 @@
-<h1>Show Figures</h1>
+<h1>Show Figure</h1>
 <%= @figure.name %>
 
 <ul>
@@ -9,7 +9,7 @@
 
 <ul>
 <% @figure.landmarks.each do |landmark| %>
-<li><a href="/landmarks/<%= landmark.id %>"><%= landmark.name %>, <%= landmark.year_completed %></a></li>
+<li><%= landmark.name %>, <%= landmark.year_completed %></li>
 <% end %>
 </ul>
 

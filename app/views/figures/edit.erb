@@ -2,7 +2,7 @@
 
 <form action="/figures/<%= @figure.id %>" method="post">
   <input type="hidden" name="_method" value="patch">
-  <p><label>Figure: </label><input type="text" name="figure[name]" value="<%= @figure.name %>" id="figure_name"></p>
+  <label>Figure: </label><input type="text" name="figure[name]" value="<%= @figure.name %>" id="figure_name">
   <p>Choose an existing landmark and title:</p>
   <p>Landmarks:</p>
   <% Landmark.all.each do |landmark| %>

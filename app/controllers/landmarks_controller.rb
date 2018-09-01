@@ -20,7 +20,7 @@ class LandmarksController < ApplicationController
   end
 
   get '/landmarks/:id/edit' do
-    @landmark = Landmark.find_by_id(parmas[:id])
+    @landmark = Landmark.find(parmas[:id])
     erb :'/landmarks/edit'
   end
 
